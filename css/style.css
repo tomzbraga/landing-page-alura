@@ -1,8 +1,10 @@
-
+/* RESET */
 * {
   margin: 0;
   padding: 0;
 }
+
+/* Estilo Desktop */
 
 body {
   background-color: #0E1014;
@@ -21,7 +23,8 @@ p {
   font-size: 24px;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  margin-top: 24px;
+  width: 792px;
+  margin: 24px auto 0;
 }
 
 a {
@@ -55,12 +58,42 @@ header img {
   margin: 50px 0 0 180px;
 }
 
-/* <weight>: Use a value from 200 to 900
- <uniquifier>: Use a unique and descriptive class name
+@media (max-width: 768px) {
+  
+  header img {
+    margin: 65px 0 0 60px;
+  }
 
-.unbounded-<uniquifier> {
-  font-family: "Unbounded", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+  p {
+    width: 648px;
+  }
+
+
 }
+
+@media (max-width: 375px) {
+
+  header img {
+    margin: 32px 0 0 16px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+    width: 340px;
+  }
+
+  section img {
+    width: 340px;
+    height: 230px;
+  }
+
+  a {
+    font-size: 20px;
+    width: 251px;
+  }
+}
+
